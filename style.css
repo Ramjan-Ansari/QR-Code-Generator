@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('wave-haikei.png');
+    background-size: cover;
+}
+.box{
+    background-color: #0287af;
+    padding: 30px;
+    width: 400px;
+    border-radius: 8px;
+}
+
+.qr-header h1{
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.qr-header div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.qr-header input{
+    width: 100%;
+    margin-block: 10px;
+}
+
+.qr-header input, .qr-header div select{
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+}
+.qr-header div label{
+    font-size: 20px;
+}
+
+.qr-body{
+    display:grid;
+    place-items: center;
+    padding: 20px;
+}
+.qr-body img{
+    max-width: 100%;
+    max-height: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.qr-footer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.qr-footer a{
+    background-color: #fff;
+    padding: 16px 32px;
+    font-size: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #121212;
+    margin: 2px;
+}
+
+@media only screen and (max-width:450px){
+    .qr-header h1{
+        font-size: 1.5rem;
+    }
+    .box{
+        width: 80%;
+        min-width: 280px;
+    }
+
+    .qr-footer a{
+        padding: 10px 12px;
+        font-size: 1rem;
+    }
+    .qr-header input, .qr-header div select{
+        font-size: 1rem;
+    }
+}
+
+
